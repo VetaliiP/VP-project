@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Work;
+  src: url('./assets/Fonts/Work_Sans/static/WorkSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Neon;
+  src: url('./assets/Fonts/Neonderthaw-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url('./assets/Fonts/Bebas/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+  font-family: Audi;
+  src: url('./assets/Fonts/Audiowide/Audiowide-Regular.ttf');
+}
+
+@font-face {
+  font-family: Anton;
+  src: url('./assets/Fonts/Anton/Anton-Regular.ttf');
+}
+
+@theme {
+  --font-neon: Neon, sans-serif;
+  --font-bebas: Bebas, sans-serif;
+  --font-audi: Audi, sans-serif;
+  --font-anton: Anton, sans-serif;
+  --font-work: Work, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.text_block {
+  background-color: #dddddd;
+  padding: 12px;
+  border-radius: 10px;
+  font-style: bold;
+  font-family: Bebas;
+  color: #242424;
+  font-size: 24px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.skills_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #dddddd;
+  color: #242424;
+  border-radius: 10px;
+  font-family: Bebas;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.active_button {
+  background-color: white;
+  color: black;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid #242424;
+  letter-spacing: 1px;
+}
+
+.not_active_button {
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  border: 1px solid white;
+}
+
+.using {
+  background-color: white;
+}
+
+.practiced {
+  background-color: purple;
+}
