@@ -143,7 +143,7 @@ export const Skills: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col p-4 sm:items-start'>
+                <div className='flex flex-col py-4 sm:items-start'>
                     <div className='text_block sm:self-start self-center  mb-4'><p className='sm:text-4xl text-3xl'>@programming_languages</p></div>
                     <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 sm:p-4`}>
                         <div className='skills_block'>

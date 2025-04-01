@@ -11,7 +11,7 @@ export const Navigation: FC = () => {
                 <div className="text_block">#Expirience</div>
             </NavLink>
             <NavLink to="/home" >
-                <div className="text_block">#About</div>
+                <div className="text_block">#Pet-Project</div>
             </NavLink>
         </nav>
     )
