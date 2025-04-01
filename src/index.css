@@ -78,12 +78,16 @@ main {
   cursor: pointer;
 }
 
+.text_block:hover {
+  color: #5A3FC0;
+}
+
 .skills_block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 12px 24px 12px 24px;
   background: #dddddd;
   color: #242424;
   border-radius: 10px;
@@ -95,7 +99,7 @@ main {
 .container {
   max-width: 960px;
   width: 100%;
-  padding: 16px;
+  padding: 12px 24px 12px 24px;
   margin: 0 auto;
 }
 
@@ -118,10 +122,7 @@ main {
   border: 1px solid white;
 }
 
-.using {
-  background-color: white;
-}
-
-.practiced {
-  background-color: purple;
+::selection {
+  background-color: #5A3FC0;
+  color: white;
 }
