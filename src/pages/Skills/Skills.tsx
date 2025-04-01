@@ -7,7 +7,7 @@ export const Skills: FC = () => {
     return (
         <section className="container ">
             <div className='wrapper'>
-                <div className='flex flex-row justify-between'>
+                <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center'>
                     <div className='flex flex-col justify-between items-center flex-1'>
 
                         <div className='flex flex-col self-start py-4 font-work gap-1 '>
@@ -37,32 +37,35 @@ export const Skills: FC = () => {
                             </span>
                         </div>
 
-                        <div className='skills_page flex flex-row gap-4 py-4 self-start items-center'>
-                            <div className='text_block self-start '><p className='text-4xl'>@My_Stack</p></div>
-                            <div >
-                                <input type="radio" name="page_skills" value="using" id="using" className='hidden'
-                                    onChange={(e) => setSelectedSkill(e.target.value)}
-                                />
-                                <label htmlFor="using"
-                                    className={` ${(selectedSkill === "using") ? 'active_button' : 'not_active_button'} cursor-pointer font-bebas text-xl select-none`}
-                                >
-                                    Frameworks
-                                </label>
+                        <div className='skills_page flex sm:flex-row flex-col gap-4 py-4 sm:self-start items-center'>
+                            <div className='text_block sm:self-start self-center '><p className='sm:text-4xl text-3xl'>@My_Stack</p></div>
+                            <div className='flex flex-row gap-4'>
+                                <div >
+                                    <input type="radio" name="page_skills" value="using" id="using" className='hidden'
+                                        onChange={(e) => setSelectedSkill(e.target.value)}
+                                    />
+                                    <label htmlFor="using"
+                                        className={` ${(selectedSkill === "using") ? 'active_button' : 'not_active_button'} cursor-pointer font-bebas text-xl select-none`}
+                                    >
+                                        Frameworks
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="page_skills" value="practiced" id="practiced" className='hidden'
+                                        onChange={(e) => setSelectedSkill(e.target.value)}
+                                    />
+                                    <label htmlFor="practiced"
+                                        className={` ${(selectedSkill === "practiced") ? 'active_button' : 'not_active_button'} cursor-pointer font-bebas text-xl select-none`}
+                                    >
+                                        Additional_tools
+                                    </label>
+                                </div>
                             </div>
-                            <div>
-                                <input type="radio" name="page_skills" value="practiced" id="practiced" className='hidden'
-                                    onChange={(e) => setSelectedSkill(e.target.value)}
-                                />
-                                <label htmlFor="practiced"
-                                    className={` ${(selectedSkill === "practiced") ? 'active_button' : 'not_active_button'} cursor-pointer font-bebas text-xl select-none`}
-                                >
-                                    Additional tools
-                                </label>
-                            </div>
+
                         </div>
                     </div>
-                    <div className='photo_block flex flex-col justify-between items-center w-[250px]'>
-                        <div className='size-full bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-3'>
+                    <div className='photo_block flex flex-col justify-between items-center sm:w-[250px] w-full'>
+                        <div className='sm:size-full size-[250px] bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-3'>
                             #Photo
                         </div>
                         <div className='flex flex-row justify-around py-4 w-full flex-1 '>
@@ -121,7 +124,7 @@ export const Skills: FC = () => {
                             Strapi
                         </div>
                     </div>
-                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 p-4 ${(selectedSkill === "practiced") ? 'opacity-100 ' : 'hidden opacity-0'} transition-all duration-300`}>
+                    <div className={`skills_blocks flex flex-row flex-wrap sm:justify-start justify-end items-center gap-4 p-4 ${(selectedSkill === "practiced") ? 'opacity-100 ' : 'hidden opacity-0'} transition-all duration-300`}>
                         <div className='skills_block'>
                             <span>Bootstrap </span>
                             {/* <span>star</span> */}
@@ -140,8 +143,8 @@ export const Skills: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col py-4'>
-                    <div className='text_block self-start mb-4'><p className='text-4xl'>@programming_languages</p></div>
+                <div className='flex flex-col p-4 sm:items-start'>
+                    <div className='text_block sm:self-start self-center  mb-4'><p className='sm:text-4xl text-3xl'>@programming_languages</p></div>
                     <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 p-4`}>
                         <div className='skills_block'>
                             <span>CSS (SASS)</span>
