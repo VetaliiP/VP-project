@@ -1,8 +1,7 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 
 export const Skills: FC = () => {
 
-    const [selectedSkill, setSelectedSkill] = useState("using");
 
     return (
         <section className="container ">
@@ -10,25 +9,25 @@ export const Skills: FC = () => {
                 <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center'>
                     <div className='flex flex-col justify-between items-center flex-1'>
 
-                        <div className='flex flex-col self-start py-4 font-work justify-between flex-1'>
+                        <div className='flex flex-col self-start font-bebas justify-between flex-1'>
                             <span className='flex flex-row '>
-                                <div className='border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>
-                                    Field of Expertise:
+                                <div className='border-3 border-amber-50 rounded-l-[10px] px-2 py-3 text-2xl flex-1 text-left'>
+                                    <p className='whitespace-nowrap'>Field of Expertise:</p>
                                 </div>
                                 <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>
                                     <p className='whitespace-nowrap'>Web Development </p>
                                 </div>
                             </span>
                             <span className='flex flex-row'>
-                                <div className=' border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>Name:</div>
+                                <div className=' border-3 border-amber-50 rounded-l-[10px] px-2 py-3 text-2xl flex-1 text-left'>Name:</div>
                                 <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>Vitalii</div>
                             </span>
                             <span className='flex flex-row'>
-                                <div className=' border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>Surname:</div>
+                                <div className=' border-3 border-amber-50 rounded-l-[10px] px-2 py-3 text-2xl flex-1 text-left'>Surname:</div>
                                 <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>Pererva</div>
                             </span>
                             <span className='flex flex-row'>
-                                <div className=' border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>Age:</div>
+                                <div className=' border-3 border-amber-50 rounded-l-[10px] px-2 py-3 text-2xl flex-1 text-left'>Age:</div>
                                 <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>32</div>
                             </span>
                             {/* <span className='flex flex-row'>
@@ -39,7 +38,7 @@ export const Skills: FC = () => {
 
 
                     </div>
-                    <div className='photo_block flex flex-col justify-between items-center sm:w-[200px] w-full'>
+                    <div className='photo_block flex flex-col justify-between items-center sm:w-[200px] w-full '>
                         <div className='sm:size-full size-[250px] bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-1 '>
                             <img src='/Photo.jpg' alt='Фото' className='size-[100%] rounded-[10px]' />
                         </div>
@@ -96,13 +95,13 @@ export const Skills: FC = () => {
                 </div>
                 <div>
                     <div className='skills_page flex flex-col sm:self-start items-start'>
-                        <div className='text_block sm:self-start self-center '><p className='sm:text-4xl text-3xl'>@My_Stack</p></div>
+                        <div className='text_block self-start pt-6 pb-2 '><p className='sm:text-4xl text-3xl'>@My_Stack</p></div>
                         <div className='font-bebas text-xl select-none tracking-widest`'>
                             <p className='tracking-wider underline'>Frameworks</p>
                         </div>
 
                     </div>
-                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 p-4 `}>
+                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 py-2 `}>
                         <div className='skills_block'>
                             <span>React</span>
                             {/* <span>star</span> */}
@@ -125,7 +124,7 @@ export const Skills: FC = () => {
                         <p className='tracking-wider underline'>Additional tools</p>
 
                     </div>
-                    <div className={`skills_blocks flex flex-row flex-wrap sm:justify-start justify-end items-center gap-4 p-4 `}>
+                    <div className={`skills_blocks flex flex-row flex-wrap sm:justify-start justify-end items-center gap-4 py-2 `}>
                         <div className='skills_block'>
                             <span>Bootstrap </span>
                             {/* <span>star</span> */}
@@ -146,7 +145,7 @@ export const Skills: FC = () => {
                 </div>
                 <div className='flex flex-col py-4 sm:items-start'>
                     <div className='text_block sm:self-start self-center'><p className='sm:text-4xl text-3xl'>@programming_languages</p></div>
-                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 sm:p-4`}>
+                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 py-2`}>
                         <div className='skills_block'>
                             <span>CSS (SASS)</span>
                             {/* <span>star</span> */}

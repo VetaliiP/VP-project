@@ -67,7 +67,6 @@ main {
 }
 
 .text_block {
-  padding: 6px;
   font-style: bold;
   font-family: Bebas;
   /* color: #dddddd; */
@@ -87,8 +86,8 @@ main {
   align-items: center;
   padding: 12px 24px 12px 24px;
   background: #dddddd;
-  color: #242424;
   border-radius: 10px;
+  color: #242424;
   font-family: Bebas;
   font-size: 24px;
   letter-spacing: 1px;
