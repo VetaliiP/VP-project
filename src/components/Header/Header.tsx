@@ -5,8 +5,11 @@ import { ToggleTheme } from './ToggleTheme';
 
 export const Header: FC = () => {
     return (
-        <header className='container flex flex-row justify-between items-center'>
+        <header className='container flex flex-row justify-end items-center'>
             <Logo />
+            <div className='flex-1'>
+
+            </div>
             <Navigation />
             <ToggleTheme />
         </header>

@@ -10,65 +10,45 @@ export const Skills: FC = () => {
                 <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center'>
                     <div className='flex flex-col justify-between items-center flex-1'>
 
-                        <div className='flex flex-col self-start py-4 font-work gap-1 '>
+                        <div className='flex flex-col self-start py-4 font-work justify-between flex-1'>
                             <span className='flex flex-row '>
-                                <div className='border-3 border-amber-50 rounded-l-[10px] px-2 py-4 self-center flex-1 text-left'>
+                                <div className='border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>
                                     Field of Expertise:
                                 </div>
-                                <div className=' bg-amber-50 text-[#242424] rounded-r-[10px] px-2 pt-4  text-2xl '>
-                                    Web Development
+                                <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>
+                                    <p className='whitespace-nowrap'>Web Development </p>
                                 </div>
                             </span>
                             <span className='flex flex-row'>
-                                <div className='bg-amber-50 text-[#242424] rounded-l-[10px] pl-2 py-4 self-end flex-1 text-left'>Name:</div>
-                                <div className='border-3 border-amber-50 rounded-r-[10px] px-2 py-2 text-2xl  text-right'>Vitalii</div>
+                                <div className=' border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>Name:</div>
+                                <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>Vitalii</div>
                             </span>
                             <span className='flex flex-row'>
-                                <div className='bg-amber-50 text-[#242424] rounded-l-[10px] pl-2 py-4 self-end flex-1 text-left'>Surname:</div>
-                                <div className='border-3 border-amber-50 rounded-r-[10px] px-2 py-2 text-2xl  text-right'>Pererva</div>
+                                <div className=' border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>Surname:</div>
+                                <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>Pererva</div>
                             </span>
                             <span className='flex flex-row'>
-                                <div className='bg-amber-50 text-[#242424] rounded-l-[10px] pl-2 py-4 self-end flex-1 text-left'>Age:</div>
-                                <div className='border-3 border-amber-50 rounded-r-[10px] px-2 py-2 text-2xl text-right'>32</div>
+                                <div className=' border-3 border-amber-50 rounded-l-[10px] pl-2 py-3 text-2xl flex-1 text-left'>Age:</div>
+                                <div className=' border-3 border-amber-50 bg-amber-50 text-[#242424] rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center'>32</div>
                             </span>
-                            <span className='flex flex-row'>
+                            {/* <span className='flex flex-row'>
                                 <div className='bg-amber-50 text-[#242424] rounded-l-[10px] pl-2 py-4 self-end flex-1 text-left'>Mail:</div>
-                                <div className='border-3 border-amber-50 rounded-r-[10px] px-2 py-2 text-2xl text-right'>pvty36@gmail.com</div>
-                            </span>
+                                <div className='border-3 border-amber-50 rounded-r-[10px] px-2 py-2 text-2xl flex-1 text-right'>pvty36@gmail.com</div>
+                            </span> */}
                         </div>
 
-                        <div className='skills_page flex sm:flex-row flex-col gap-4 py-4 sm:self-start items-center'>
-                            <div className='text_block sm:self-start self-center '><p className='sm:text-4xl text-3xl'>@My_Stack</p></div>
-                            <div className='flex flex-row gap-4'>
-                                <div >
-                                    <input type="radio" name="page_skills" value="using" id="using" className='hidden'
-                                        onChange={(e) => setSelectedSkill(e.target.value)}
-                                    />
-                                    <label htmlFor="using"
-                                        className={` ${(selectedSkill === "using") ? 'active_button' : 'not_active_button'} cursor-pointer font-bebas text-xl select-none`}
-                                    >
-                                        Frameworks
-                                    </label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="page_skills" value="practiced" id="practiced" className='hidden'
-                                        onChange={(e) => setSelectedSkill(e.target.value)}
-                                    />
-                                    <label htmlFor="practiced"
-                                        className={` ${(selectedSkill === "practiced") ? 'active_button' : 'not_active_button'} cursor-pointer font-bebas text-xl select-none`}
-                                    >
-                                        Additional_tools
-                                    </label>
-                                </div>
-                            </div>
 
-                        </div>
                     </div>
-                    <div className='photo_block flex flex-col justify-between items-center sm:w-[250px] w-full'>
-                        <div className='sm:size-full size-[250px] bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-3 '>
-                            <img src='/Photo.jpg' alt='Фото' className='block size-[95%] rounded-[10px] p-4' />
+                    <div className='photo_block flex flex-col justify-between items-center sm:w-[200px] w-full'>
+                        <div className='sm:size-full size-[250px] bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-1 '>
+                            <img src='/Photo.jpg' alt='Фото' className='size-[100%] rounded-[10px]' />
                         </div>
-                        <div className='flex flex-row justify-around py-4 w-full flex-1 '>
+                        <div className='flex flex-row justify-around py-4 w-full flex-0 cursor-pointer'>
+                            <div onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=pvty36@gmail.com&su=Трудоустройство&body=Привет, это компания ', '_blank')}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                </svg>
+                            </div>
                             <div>
                                 <a href="https://github.com/VetaliiP?tab=overview&from=2025-03-01&to=2025-03-31" target="_blank" rel="noopener noreferrer" className="text-amber-50 underline">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
@@ -99,23 +79,30 @@ export const Skills: FC = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className='flex-1 w-full flex flex-row justify-center items-center'>
+                        {/* <div className='flex-1 w-full flex flex-row justify-center items-center'>
                             <button
                                 className="w-full bg-amber-50 py-2 px-4 rounded-[10px] text-[#242424] font-bebas text-3xl flex flex-row justify-center items-center cursor-pointer hover:bg-[#5A3FC0] transition-all duration-300"
                                 onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=pvty36@gmail.com&su=Трудоустройство&body=Привет, это компания ', '_blank')}
                             >
                                 <span>Send me</span>
-                                {/* <span className='ml-2 pb-1 pt-1'>
+                                <span className='ml-2 pb-1 pt-1'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
                                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                                     </svg>
-                                </span> */}
+                                </span>
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div>
-                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 p-4 ${(selectedSkill === "using") ? ' opacity-100 ' : 'hidden opacity-0'} transition-all duration-300`}>
+                    <div className='skills_page flex flex-col sm:self-start items-start'>
+                        <div className='text_block sm:self-start self-center '><p className='sm:text-4xl text-3xl'>@My_Stack</p></div>
+                        <div className='font-bebas text-xl select-none tracking-widest`'>
+                            <p className='tracking-wider underline'>Frameworks</p>
+                        </div>
+
+                    </div>
+                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 p-4 `}>
                         <div className='skills_block'>
                             <span>React</span>
                             {/* <span>star</span> */}
@@ -133,7 +120,12 @@ export const Skills: FC = () => {
                             Strapi
                         </div>
                     </div>
-                    <div className={`skills_blocks flex flex-row flex-wrap sm:justify-start justify-end items-center gap-4 p-4 ${(selectedSkill === "practiced") ? 'opacity-100 ' : 'hidden opacity-0'} transition-all duration-300`}>
+                    <div className={` cursor-pointer font-bebas text-xl select-none`}>
+
+                        <p className='tracking-wider underline'>Additional tools</p>
+
+                    </div>
+                    <div className={`skills_blocks flex flex-row flex-wrap sm:justify-start justify-end items-center gap-4 p-4 `}>
                         <div className='skills_block'>
                             <span>Bootstrap </span>
                             {/* <span>star</span> */}
@@ -153,7 +145,7 @@ export const Skills: FC = () => {
                     </div>
                 </div>
                 <div className='flex flex-col py-4 sm:items-start'>
-                    <div className='text_block sm:self-start self-center  mb-4'><p className='sm:text-4xl text-3xl'>@programming_languages</p></div>
+                    <div className='text_block sm:self-start self-center'><p className='sm:text-4xl text-3xl'>@programming_languages</p></div>
                     <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 sm:p-4`}>
                         <div className='skills_block'>
                             <span>CSS (SASS)</span>

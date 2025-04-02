@@ -67,12 +67,10 @@ main {
 }
 
 .text_block {
-  background-color: #dddddd;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 6px;
   font-style: bold;
   font-family: Bebas;
-  color: #242424;
+  /* color: #dddddd; */
   font-size: 24px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -92,7 +90,7 @@ main {
   color: #242424;
   border-radius: 10px;
   font-family: Bebas;
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 
