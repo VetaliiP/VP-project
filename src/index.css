@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -7,12 +9,23 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #242424;
+}
+
+.dark {
+  --bg-color: #242424;
+  --text-color: #f5f5f5;
 }
 
 @font-face {
@@ -73,6 +86,8 @@ main {
   font-size: 24px;
   letter-spacing: 1px;
   cursor: pointer;
+  /* color: var(--text-color); */
+
 }
 
 .text_block:hover {
@@ -122,4 +137,12 @@ main {
 ::selection {
   background-color: #5A3FC0;
   color: white;
+}
+
+.text_skills_left {
+  @apply border-3 dark:border-amber-50 border-[#242424] text-[#242424] dark:text-amber-50 rounded-l-[10px] px-2 py-3 text-2xl flex-1 text-left;
+}
+
+.text_skills_right {
+  @apply border-3 dark:border-amber-50 dark:bg-amber-50 border-[#242424] bg-[#242424] dark:text-[#242424] text-amber-50 rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center;
 }
