@@ -26,11 +26,11 @@ export const ToggleTheme: FC = () => {
 
     return (
         <div
-            className='border-[#242424] border-2  text-[#242424] font-bebas rounded-[10px] text-[24px] ml-8 p-3 cursor-pointer flex justify-center items-center w-[60px]
+            className='border-[#242424] border-2  bg-[#242424] text-amber-50 font-bebas rounded-[10px] text-[24px] ml-8 p-3 cursor-pointer flex justify-center items-center w-[60px]
              dark:text-[#242424] dark:border-[#242424] dark:bg-amber-50 '
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >
-            {theme === "light" ? "Light" : "Dark"}
+            {theme === "light" ? "Dark" : "Light"}
         </div>
     )
 }

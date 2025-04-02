@@ -20,12 +20,15 @@
 
 :root {
   --bg-color: #ffffff;
-  --text-color: #242424;
+  --text-color: #FFFBEB;
+  --bg-blocs-color: #242424;
+
 }
 
 .dark {
   --bg-color: #242424;
-  --text-color: #f5f5f5;
+  --text-color: #242424;
+  --bg-blocs-color: #FFFBEB;
 }
 
 @font-face {
@@ -100,9 +103,9 @@ main {
   justify-content: center;
   align-items: center;
   padding: 12px 24px 12px 24px;
-  background: #dddddd;
+  background: var(--bg-blocs-color);
   border-radius: 10px;
-  color: #242424;
+  color: var(--text-color);
   font-family: Bebas;
   font-size: 24px;
   letter-spacing: 1px;
