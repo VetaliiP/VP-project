@@ -9,7 +9,7 @@ export const Skills: FC = () => {
                 <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center'>
                     <div className='flex flex-col justify-between items-center flex-1'>
 
-                        <div className='flex flex-col self-start font-bebas justify-between flex-1 '>
+                        <div className='flex flex-col self-start font-bebas justify-between flex-1 sm:gap-0 gap-4'>
                             <span className='flex flex-row '>
                                 <div className='text_skills_left'>
                                     <p className='whitespace-nowrap'>Field of Expertise:</p>
@@ -32,8 +32,8 @@ export const Skills: FC = () => {
                             </span>
                         </div>
                     </div>
-                    <div className='photo_block flex flex-col justify-between items-center sm:w-[200px] w-full '>
-                        <div className='sm:size-full size-[250px] bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-1 '>
+                    <div className='photo_block flex flex-col justify-between items-center w-[200px] '>
+                        <div className='sm:size-full size-[200px] bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-1 '>
                             <img src='/Photo.jpg' alt='Фото' className='size-[100%] rounded-[10px] border-2 border-[#242424] dark:border-amber-50' />
                         </div>
                         <div className='flex flex-row justify-around py-4 w-full flex-0 cursor-pointer text-[#242424] dark:text-amber-50 '>
@@ -104,11 +104,7 @@ export const Skills: FC = () => {
                         <p className='tracking-wider underline dark:text-amber-50 text-[#242424]'>Additional tools</p>
 
                     </div>
-                    <div className={`skills_blocks flex flex-row flex-wrap sm:justify-start justify-end items-center gap-4 py-2 `}>
-                        <div className='skills_block'>
-                            <span>Bootstrap </span>
-                            {/* <span>star</span> */}
-                        </div>
+                    <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 py-2 `}>
                         <div className='skills_block'>
                             Fetch API
                         </div>
@@ -121,10 +117,13 @@ export const Skills: FC = () => {
                         <div className='skills_block'>
                             async/await
                         </div>
+                        <div className='skills_block'>
+                            Redux
+                        </div>
                     </div>
                 </div>
                 <div className='flex flex-col py-4 sm:items-start'>
-                    <div className='text_block sm:self-start self-center'><p className='sm:text-4xl text-3xl dark:text-amber-50 text-[#242424]'><span className='text-[#5A3FC0]'>@</span>programming_languages</p></div>
+                    <div className='text_block self-start'><p className='sm:text-4xl text-3xl dark:text-amber-50 text-[#242424]'><span className='text-[#5A3FC0]'>@</span>programming_languages</p></div>
                     <div className={`skills_blocks flex flex-row flex-wrap justify-start items-center gap-4 py-2`}>
                         <div className='skills_block'>
                             <span>CSS (SASS)</span>

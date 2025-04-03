@@ -143,9 +143,9 @@ main {
 }
 
 .text_skills_left {
-  @apply border-3 dark:border-amber-50 border-[#242424] text-[#242424] dark:text-amber-50 rounded-l-[10px] px-2 py-3 text-2xl flex-1 text-left;
+  @apply border-3 dark:border-amber-50 border-[#242424] text-[#242424] dark:text-amber-50 rounded-l-[10px] px-2 py-3 sm:text-2xl text-base flex-1 text-left;
 }
 
 .text_skills_right {
-  @apply border-3 dark:border-amber-50 dark:bg-amber-50 border-[#242424] bg-[#242424] dark:text-[#242424] text-amber-50 rounded-r-[10px] px-2 py-3 text-2xl flex-1 text-right self-center;
+  @apply border-3 dark:border-amber-50 dark:bg-amber-50 border-[#242424] bg-[#242424] dark:text-[#242424] text-amber-50 rounded-r-[10px] px-2 py-3 sm:text-2xl text-base flex-1 text-right self-center;
 }
