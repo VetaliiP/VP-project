@@ -34,7 +34,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className='photo_block flex flex-col justify-between items-center w-[200px] '>
                         <div className='sm:size-full size-[200px] bg-amber-50 rounded-2xl text-[#242424] flex justify-center items-center flex-1 '>
-                            <img src='/Photo.jpg' alt='Фото' className='size-[100%] rounded-[10px] border-2 border-[#242424] dark:border-amber-50' />
+                            <img src='/Photo.jpg' alt='Фото' className='max-w-full h-auto object-cover rounded-[10px] border-2 border-[#242424] dark:border-amber-50' />
                         </div>
                         <div className='flex flex-row justify-around py-4 w-full flex-0 cursor-pointer text-[#242424] dark:text-amber-50 '>
                             <div onClick={() => window.open('https://mail.google.com/mail/?view=cm&fs=1&to=pvty36@gmail.com&su=Трудоустройство&body=Привет, это компания ', '_blank')}>
