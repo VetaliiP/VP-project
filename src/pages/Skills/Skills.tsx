@@ -6,7 +6,7 @@ export const Skills: FC = () => {
     return (
         <section className="container ">
             <div className='wrapper'>
-                <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center sm:mb-0 mb-4'>
+                <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center sm:mb-0 mb-12'>
                     <div className='flex flex-col justify-between items-center flex-1'>
 
                         <div className='flex flex-col self-start font-bebas justify-between flex-1 sm:gap-0 gap-4'>
