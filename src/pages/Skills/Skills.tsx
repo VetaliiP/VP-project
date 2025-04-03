@@ -6,7 +6,7 @@ export const Skills: FC = () => {
     return (
         <section className="container ">
             <div className='wrapper'>
-                <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center'>
+                <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center sm:mb-0 mb-4'>
                     <div className='flex flex-col justify-between items-center flex-1'>
 
                         <div className='flex flex-col self-start font-bebas justify-between flex-1 sm:gap-0 gap-4'>
@@ -77,7 +77,7 @@ export const Skills: FC = () => {
                 <div>
                     <div className='skills_page flex flex-col sm:self-start items-start'>
                         <div className='text_block self-start pt-6 pb-2 '><p className='sm:text-4xl text-3xl dark:text-amber-50 text-[#242424]'><span className='text-[#5A3FC0]'>@</span>My_Stack</p></div>
-                        <div className='font-bebas text-xl select-none tracking-widest`'>
+                        <div className='font-bebas text-base select-none tracking-widest`'>
                             <p className='tracking-wider underline dark:text-amber-50 text-[#242424]'>Frameworks</p>
                         </div>
 

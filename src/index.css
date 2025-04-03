@@ -32,6 +32,11 @@
 }
 
 @font-face {
+  font-family: Demi;
+  src: url('./assets/Fonts/ITC Avant Garde Gothic Demi/avantgarde_demi.ttf');
+}
+
+@font-face {
   font-family: Work;
   src: url('./assets/Fonts/Work_Sans/static/WorkSans-Regular.ttf');
 }
@@ -62,6 +67,7 @@
   --font-audi: Audi, sans-serif;
   --font-anton: Anton, sans-serif;
   --font-work: Work, sans-serif;
+  --font-demi: Demi, sans-serif;
 }
 
 body {
@@ -116,25 +122,6 @@ main {
   width: 100%;
   padding: 12px 24px 12px 24px;
   margin: 0 auto;
-}
-
-.active_button {
-  background-color: white;
-  color: black;
-  padding: 12px;
-  border-radius: 10px;
-  transition: 0.3s;
-  border: 1px solid #242424;
-  letter-spacing: 1px;
-}
-
-.not_active_button {
-  color: white;
-  padding: 12px;
-  border-radius: 10px;
-  transition: 0.3s;
-  letter-spacing: 1px;
-  border: 1px solid white;
 }
 
 ::selection {
