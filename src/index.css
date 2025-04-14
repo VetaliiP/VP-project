@@ -19,7 +19,7 @@
 }
 
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #FFFBEB;
   --text-color: #FFFBEB;
   --bg-blocs-color: #242424;
 
@@ -112,9 +112,10 @@ main {
   background: var(--bg-blocs-color);
   border-radius: 10px;
   color: var(--text-color);
-  font-family: Bebas;
+  font-family: Demi;
   font-size: 24px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .container {

@@ -9,13 +9,13 @@ export const Skills: FC = () => {
                 <div className='flex sm:flex-row  sm:justify-between sm:items-stretch flex-col-reverse items-center sm:mb-0 mb-16'>
                     <div className='flex flex-col justify-between items-center flex-1'>
 
-                        <div className='flex flex-col self-start font-bebas justify-between flex-1 sm:gap-0 gap-4'>
+                        <div className='flex flex-col self-start font-demi justify-between flex-1 sm:gap-0 gap-4'>
                             <span className='flex flex-row '>
                                 <div className='text_skills_left'>
-                                    <p className='whitespace-nowrap'>Field of Expertise:</p>
+                                    <p className='whitespace-nowrap mr-6'>Desired Position: </p>
                                 </div>
                                 <div className=' text_skills_right'>
-                                    <p className='whitespace-nowrap'>Web Development </p>
+                                    <p className='whitespace-nowrap'>Web Development</p>
                                 </div>
                             </span>
                             <span className='flex flex-row'>
@@ -99,7 +99,7 @@ export const Skills: FC = () => {
                             Strapi
                         </div>
                     </div>
-                    <div className={` cursor-pointer font-bebas text-xl select-none`}>
+                    <div className={` cursor-pointer font-bebas text-base select-none`}>
 
                         <p className='tracking-wider underline dark:text-amber-50 text-[#242424]'>Additional tools</p>
 
